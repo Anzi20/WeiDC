@@ -1,4 +1,4 @@
-# AttenCD
+# WeiDC
 
 This is the implementation of [?](?) at ?.
 
@@ -10,11 +10,11 @@ Our code works with the following environment.
 * `python=3.6`
 * `pytorch=1.7`
 
-## Downloading BERT and AttenCD
+## Downloading BERT and WeiDC
 
 In our paper, we use BERT ([paper](https://www.aclweb.org/anthology/N19-1423/)), please download pre-trained BERT-Base Chinese from [Google](https://github.com/google-research/bert) or from [HuggingFace](https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz).
 
-For AttenCD, you can download our codes to train models.
+For WeiDC, you can download our codes to train models.
 
 
 ## Datasets
@@ -50,7 +50,7 @@ Here are some important parameters:
 * `--do_predict`: 
 * `--input_file`: 
 * `--output_file`: the path of the output file.
-* `--test_model`: the pre-trained AttenCD model.
+* `--test_model`: the pre-trained WeiDC model.
 
 ## others
 You can leave comments in the `Issues` section, if you have any questions about our methods.
