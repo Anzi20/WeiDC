@@ -1,0 +1,117 @@
+03/01/2022 15:56:40 - INFO - __main__ -   {'do_train': True, 'do_test': False, 'do_predict': False, 'use_crf': False, 'use_last': False, 'alpha': 0.3, 'train_ratio': 0.9, 'num_atten': 0, 'distill_hidden': False, 'data_name': 'pku', 'dict_path': './data/pku/pku_dict.pkl', 'input_file': None, 'output_file': None, 'test_model': None, 'model_name': 'pku_na0', 'num_train_epochs': 50, 'patient': 3, 'max_seq_length': 300, 'ratio': 1.0, 'train_batch_size': 16, 'eval_batch_size': 16, 'learning_rate': 2e-05, 'warmup_proportion': 0.1, 'seed': 42, 'gradient_accumulation_steps': 1, 'fp16': False, 'bert_model': './pretrained_models/bert-base-chinese/', 'cache_dir': '', 'loss_scale': 0, 'server_ip': '', 'server_port': '', 'output_model_dir': './models/pku_na0_2022-03-01-15-56-40', 'save_top': 1}
+03/01/2022 15:56:40 - INFO - __main__ -   device: cuda, 16-bits training: False
+03/01/2022 15:56:41 - INFO - __main__ -   # of character in train: 55304
+03/01/2022 15:56:41 - INFO - pytorch_pretrained_bert.tokenization -   loading vocabulary file ./pretrained_models/bert-base-chinese/vocab.txt
+03/01/2022 15:56:41 - INFO - pytorch_pretrained_bert.modeling -   loading weights file ./pretrained_models/bert-base-chinese/pytorch_model.bin
+03/01/2022 15:56:41 - INFO - pytorch_pretrained_bert.modeling -   loading configuration file ./pretrained_models/bert-base-chinese/config.json
+03/01/2022 15:56:41 - INFO - pytorch_pretrained_bert.modeling -   Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/01/2022 15:56:42 - INFO - __main__ -   Model name: ./models/pku_na0_2022-03-01-15-56-40
+
+
+03/01/2022 15:56:42 - INFO - __main__ -   # of trainable parameters: 102273024
+
+03/01/2022 15:56:42 - INFO - __main__ -   ***** Running training *****
+03/01/2022 15:56:44 - INFO - __main__ -   
+Ratio: 1.000000 Train size: 27692 Test size: 3077
+03/01/2022 16:01:54 - INFO - __main__ -   
+Epoch: 1, P: 0.960018, R: 0.953574, F: 0.956785
+03/01/2022 16:01:54 - INFO - __main__ -   =======entity level========
+03/01/2022 16:01:54 - INFO - __main__ -   1.9567853263709947
+03/01/2022 16:01:55 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:02:08 - INFO - __main__ -   P: 0.948920, R: 0.939601, F: 0.944237, OOV: 0.783514
+03/01/2022 16:02:08 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:08:08 - INFO - __main__ -   
+Epoch: 2, P: 0.969893, R: 0.967416, F: 0.968653
+03/01/2022 16:08:08 - INFO - __main__ -   =======entity level========
+03/01/2022 16:08:08 - INFO - __main__ -   0.011867734853495238
+03/01/2022 16:08:09 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:08:23 - INFO - __main__ -   P: 0.960741, R: 0.952181, F: 0.956442, OOV: 0.839967
+03/01/2022 16:08:23 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:14:22 - INFO - __main__ -   
+Epoch: 3, P: 0.976766, R: 0.971510, F: 0.974131
+03/01/2022 16:14:22 - INFO - __main__ -   =======entity level========
+03/01/2022 16:14:22 - INFO - __main__ -   0.00547813575263878
+03/01/2022 16:14:23 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:14:36 - INFO - __main__ -   P: 0.965136, R: 0.952727, F: 0.958891, OOV: 0.849459
+03/01/2022 16:14:36 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:20:35 - INFO - __main__ -   
+Epoch: 4, P: 0.979608, R: 0.975197, F: 0.977397
+03/01/2022 16:20:35 - INFO - __main__ -   =======entity level========
+03/01/2022 16:20:35 - INFO - __main__ -   0.003266265401154045
+03/01/2022 16:20:36 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:20:50 - INFO - __main__ -   P: 0.966290, R: 0.954643, F: 0.960431, OOV: 0.846461
+03/01/2022 16:20:50 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:26:50 - INFO - __main__ -   
+Epoch: 5, P: 0.981716, R: 0.979083, F: 0.980398
+03/01/2022 16:26:50 - INFO - __main__ -   =======entity level========
+03/01/2022 16:26:50 - INFO - __main__ -   0.0030003860111843528
+03/01/2022 16:26:51 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:27:04 - INFO - __main__ -   P: 0.968086, R: 0.958226, F: 0.963131, OOV: 0.852956
+03/01/2022 16:27:04 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:33:04 - INFO - __main__ -   
+Epoch: 6, P: 0.982276, R: 0.980488, F: 0.981381
+03/01/2022 16:33:04 - INFO - __main__ -   =======entity level========
+03/01/2022 16:33:04 - INFO - __main__ -   0.0009831409069820385
+03/01/2022 16:33:05 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:33:18 - INFO - __main__ -   P: 0.967975, R: 0.959999, F: 0.963970, OOV: 0.849292
+03/01/2022 16:33:18 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:39:18 - INFO - __main__ -   
+Epoch: 7, P: 0.983411, R: 0.980578, F: 0.981993
+03/01/2022 16:39:18 - INFO - __main__ -   =======entity level========
+03/01/2022 16:39:18 - INFO - __main__ -   0.0006115355602169803
+03/01/2022 16:39:19 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:39:32 - INFO - __main__ -   P: 0.968329, R: 0.958504, F: 0.963392, OOV: 0.843963
+03/01/2022 16:39:32 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:45:31 - INFO - __main__ -   
+Epoch: 8, P: 0.983386, R: 0.980170, F: 0.981776
+03/01/2022 16:45:31 - INFO - __main__ -   =======entity level========
+03/01/2022 16:51:30 - INFO - __main__ -   
+Epoch: 9, P: 0.984142, R: 0.981584, F: 0.982861
+03/01/2022 16:51:30 - INFO - __main__ -   =======entity level========
+03/01/2022 16:51:30 - INFO - __main__ -   0.0008687645149750844
+03/01/2022 16:51:31 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:51:45 - INFO - __main__ -   P: 0.969860, R: 0.959462, F: 0.964633, OOV: 0.865445
+03/01/2022 16:51:45 - INFO - __main__ -   *** Testing ***
+03/01/2022 16:58:14 - INFO - __main__ -   
+Epoch: 10, P: 0.983875, R: 0.981620, F: 0.982746
+03/01/2022 16:58:14 - INFO - __main__ -   =======entity level========
+03/01/2022 17:04:42 - INFO - __main__ -   
+Epoch: 11, P: 0.984197, R: 0.982218, F: 0.983206
+03/01/2022 17:04:42 - INFO - __main__ -   =======entity level========
+03/01/2022 17:04:42 - INFO - __main__ -   0.0003450943788122496
+03/01/2022 17:04:43 - INFO - __main__ -   *** Testing ***
+03/01/2022 17:04:57 - INFO - __main__ -   P: 0.970663, R: 0.961158, F: 0.965887, OOV: 0.870441
+03/01/2022 17:04:57 - INFO - __main__ -   *** Testing ***
+03/01/2022 17:11:10 - INFO - __main__ -   
+Epoch: 12, P: 0.984079, R: 0.981520, F: 0.982798
+03/01/2022 17:11:10 - INFO - __main__ -   =======entity level========
+03/01/2022 17:17:10 - INFO - __main__ -   
+Epoch: 13, P: 0.983742, R: 0.982788, F: 0.983265
+03/01/2022 17:17:10 - INFO - __main__ -   =======entity level========
+03/01/2022 17:23:11 - INFO - __main__ -   
+Epoch: 14, P: 0.983816, R: 0.982426, F: 0.983121
+03/01/2022 17:23:11 - INFO - __main__ -   =======entity level========
+03/01/2022 17:23:11 - INFO - __main__ -   
+Early stop triggered at epoch 14
+
+03/01/2022 17:23:11 - INFO - __main__ -   ***  Best Epoch: 11 ***
