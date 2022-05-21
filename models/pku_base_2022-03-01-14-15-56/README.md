@@ -1,1 +1,1 @@
-***You can download our trained models and the results can be found in the `logs` folder.*** [Our models](https://pan.baidu.com/s/1AbB-uhVpt40UYj--51WCeQ) 提取码：59i9
+***You can download our trained models and the results can be found in the `logs` folder.*** [Our models](https://pan.baidu.com/s/1AbB-uhVpt40UYj--51WCeQ)
