@@ -1,4 +1,4 @@
-# AttenCD
+# WeiDC
 
 This is the implementation of [Weighted self Distillation for Chinese word segmentation](https://aclanthology.org/2022.findings-acl.139/) at [Findings of the Association for Computational Linguistics: ACL 2022](https://aclanthology.org/volumes/2022.findings-acl/).
 
@@ -20,7 +20,7 @@ To obtain pre-processed data, please follow [Improving  Chinese  Word  Segmentat
 
 Furthermore, we conduct some NER tasks (including `WEIBO`, `RESUME`, and `MSRA`).
 
-# The AttenCD
+# The WeiDC
 
 For AttenCD, you can download our codes to train models.
 
