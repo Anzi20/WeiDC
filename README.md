@@ -31,7 +31,7 @@ For AttenCD, you can download our codes to train models.
 Here are some important parameters:
 
 * `--do_train`: training mode.
-* `--num_wei`: weight class.
+* `--num_wei`(num_atten): weight class.
 * `--ratio`: control the amount of training data.
 * `--data_name`: the name of the data to be trained.
 * `--dict_path`: the dictionary path.
